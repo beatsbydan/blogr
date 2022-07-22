@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --grayblue:hsl(240, 2%, 79%);
+    --verydarkgb:hsl(207, 13%, 34%);
+    --verydarkbb:hsl(240, 10%, 16%);
+    --lightred:hsl(353, 100%, 62%);
+    --verylightred:hsl(13, 100%, 72%);
+    --verydarkgrayblue: hsl(237, 17%, 21%);
+    --verydarkdesaturatedblue: hsl(237, 23%, 32%);
+}
+html, body{
+    overflow-x: hidden;
+    line-height: 1.6em;
+}
+.company{
+    border-radius: 5px;
+    padding: 20px;
+    line-height:2.1em ;
+    background-color: hsla(240, 8%, 95%, 0.842);
+    visibility: hidden;
+    position: relative;
+    height: 0;
+    padding: 0;
+    top: -1000px;
+    transition: all 0.4s ease-in-out;
+}
+.company.companies{
+    visibility: visible;
+    height: unset;
+    padding: 18px;
+    top: 0;
+}
+@media(min-width: 800px){
+    .company{
+        position: absolute;
+        text-align: left;
+        background-color: white;
+        width: 131.5px;
+        box-shadow: 0px 4px 12px rgba(63, 62, 62, 0.438);
+    }
+    .company.companies{
+        top:100px;
+        padding: 13px;
+    }
+}

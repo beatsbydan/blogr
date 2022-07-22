@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --grayblue:hsl(240, 2%, 79%);
+    --verydarkgb:hsl(207, 13%, 34%);
+    --verydarkbb:hsl(240, 10%, 16%);
+    --lightred:hsl(353, 100%, 62%);
+    --verylightred:hsl(13, 100%, 72%);
+    --verydarkgrayblue: hsl(237, 17%, 21%);
+    --verydarkdesaturatedblue: hsl(237, 23%, 32%);
+}
+html, body{
+    overflow-x: hidden;
+    line-height: 1.6em;
+}
+header{
+    width: 100%;
+    border-radius: 0 0 0 100px;
+    text-align: center;
+    background-image: linear-gradient(to bottom, hsl(13, 100%, 72%), hsl(353, 100%, 62%) );
+}
+header .initial{
+    background-image: url(images/bg-pattern-intro-mobile.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: 300%;
+    border-radius: 0 0 0 100px;
+    width: 100%;
+}
+header .initial .blck-top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 50px 7% 0px 7%;
+}
+.logo{
+    width: 27%;
+}
+header .initial .blck-top nav .hamburger{
+    cursor: pointer;
+    width: 30px;
+}
+header .initial .blck-top nav .hamburger.active{
+    display: none;
+}
+header .initial .blck-top nav .close{
+    display: none;
+    cursor: pointer;
+}
+header .initial .blck-top nav .close.revealed{
+    display: block;
+}
+.top .block-1 h1{
+    padding-top: 83px;
+    font-size: 2em;
+    line-height: 1.2em;
+    color: white;
+    font-family: 'Overpass';
+}
+.top.instate{
+    margin-left: -5000000000px;
+}
+.top .block-1 h1 span, .top .block-1 p span{
+    display: block;
+}
+.top .block-1 p{
+    font-family: 'Overpass';
+    padding-top: 15px;
+    color: rgba(255, 255, 255, 0.781);
+}
+.for-desk{
+    display: none;
+}
+.btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 35px;
+    padding-bottom: 150px;
+}
+.btns button{
+    width: 40%;
+    border: none;
+    border-radius: 23px;
+    font-family: 'Overpass';
+    font-weight: 600;
+    font-size: 1em;
+    cursor: pointer;
+}
+.btns .btn-1{
+    padding: 12px;
+    background-color: white;
+}
+.btns .btn-1:hover{
+    transition: all 0.5s ease-in-out;
+    background-color: var(--verylightred);
+}
+.btns .btn-1:hover a{
+    color: white;
+}
+.btns .btn-2{
+    color: white;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid white;
+}
+.btns .btn-2:hover{
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+}
+.btns .btn-2:hover a{
+    color: var(--verylightred);
+}
+.btns .btn-1 a{
+    text-decoration: none;
+    color: var(--lightred);
+} 
+.btns .btn-2 a{
+    text-decoration: none;
+    color: white;
+}
+main{
+    margin-top: 100px;
+}
+.t2{
+    text-align: center;
+    font-family: 'Overpass';
+}
+.mid{
+    margin-top: 50px;
+}
+.mid .block-2 .first{
+    width: 100%;
+    margin-top: 45px;
+}
+.mid .second{
+    display: none;
+}
+.texts-1{
+    margin-top: 40px;
+    text-align: center;
+    font-family: 'Overpass';
+}
+.texts-1 span{
+    display: block;
+}
+.t3, .t4{
+    padding-bottom: 12px;
+}
+.block-3{
+    margin-bottom: 35px;
+}
+.block-3, .block-4{
+    padding: 0 6%;
+}
+.texts-1{
+    margin-bottom: 240px;
+}
+.third{
+    z-index: 1;
+    position: relative;
+    top: -150px;
+    width: 100%;
+}
+.t2, .t3, .t4, .t7, .t8{
+    color: hsl(237, 23%, 32%);
+}
+.block-5{
+    padding-bottom: 100px;
+    border-radius: 0 100px 0 100px;
+    background-image: linear-gradient(to bottom,hsl(237, 17%, 21%), hsl(237, 23%, 32%));    
+}
+.contents{
+    background-image: url(images/bg-pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-position: 50% -120px;
+    background-size: 150%;
+    border-radius: 0 100px 0 0;
+}
+.text-2{
+    margin-top: -130px;
+    text-align: center;
+    padding: 0 6%;
+}
+.text-2 .h1{
+    color: white;
+    font-family: 'Overpass';
+    line-height: 1.3em;
+    font-size: 1.7em;
+    font-weight: 600;
+}
+.text-2 span{
+    display: block;
+}
+.text-2 p{
+    padding-top: 12px;
+    font-family: 'Overpass';
+    color: rgba(255, 255, 255, 0.658);
+}
+.block-6{
+    margin: 70px 0 80px 0;
+    font-family: 'Overpass';
+}
+.fourth{
+    width: 100%;
+}
+.fifth{
+    display: none;
+}
+.texts-3{
+    text-align: center;
+    padding: 0 6%;
+    margin-top: 30px;
+}
+.t7, .t8{
+    padding-bottom: 12px;
+}
+.block-7{
+    padding-bottom: 30px;
+}
+footer{
+    background-color: var(--verydarkbb);
+    font-family: 'Ubuntu';
+    padding: 80px 0;
+    border-radius: 0 100px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.block-10 ul li a, .block-11 ul li a, .block-12 ul li a{
+    text-decoration: none;
+    font-family: 'Ubuntu';
+    color: var(--grayblue);
+}
+.block-10 ul li a:hover, .block-11 ul li a:hover, .block-12 ul li a:hover{
+    text-decoration: underline;
+}
+.logobot{
+    margin-bottom: 60px;
+}
+.block-10 ul, .block-11 ul, .block-12 ul{
+    list-style: none;
+}
+.block-10, .block-11{
+    margin-bottom: 30px;
+}
+.top-1, .top-2, .top-3{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding-bottom: 12px;
+}
+@media (min-width:500px){
+    header .initial .top .block-1 h1 span, header .initial .top .block-1 p span{
+        display: inline;
+    }
+    .logo{
+        width: 100px;
+    }
+    .texts-1 span, .text-2 span{
+        display: inline;
+    }
+}
+@media (min-width:800px){
+    .btns button{
+        width: 250px;
+    }
+    .top.instate{
+        margin-left: 0;
+    }
+    .logo{
+        width: 80px;
+        margin-right:5% ;
+    }
+    .top .block-1 h1{
+        font-size: 3.4em;
+    }
+    #ex{
+        display: none;
+    }
+    .hamburger{
+        display: none;
+    }
+    header .initial .top .block-1 h1 span, header .initial .top .block-1 p span{
+        display: inline;
+    }
+    .mid{
+        margin-top: 200px;
+    }
+    .exclusive{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .mid .block-2 .first{
+        display: none;
+    }
+    .mid .second{
+        display: block;
+        width:50%;
+        position: relative;
+        z-index: -1;
+        top: -120px;
+        right: -150px;
+    }
+    .texts-1{
+        text-align: left;
+    }
+    .texts-1 span{
+        display: inline;
+    }
+    .block-5{
+        padding-bottom: 0;
+    }
+    .contents{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-size: 1000px;
+        height: 500px;
+        background-position: -320px -600px;
+    }
+    .text-2{
+        margin-top: unset;
+        text-align: left;
+    }
+    .third{
+        top: 0px;
+        left: 60px;
+    }
+    .fourth{
+        display: none;
+    }
+    .fifth{
+        display: block;
+        width: 50%;
+        left: -120px;
+        position: relative;
+        z-index: -1;
+    }
+    .blck{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 120px;
+    }
+    .texts-3{
+        text-align: left;
+    }
+    footer{
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-items: stretch;
+    }
+    .bottom{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .logobot{
+        display: flex;
+    }
+    .block-10, .block-11{
+        margin-bottom:0px;
+    }
+    .block-10, .block-11, .block-12{
+        line-height: 2.2em;
+        text-align: left;
+    }
+    .texts-3{
+        margin-left: -140px;
+    }
+    .texts-1{
+        margin-right: -140px;
+    }
+    .texts-1, .texts-3{
+        padding: 0 13% 0 5%;
+    }
+    .text-2 span{
+        display: inline-block;
+    }
+    header .initial .blck-top{
+        justify-content: unset;
+    }
+}
