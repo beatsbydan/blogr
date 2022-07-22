@@ -84,7 +84,7 @@ header .initial .blck-top nav .close.revealed{
     align-items: center;
     gap: 15px;
     margin-top: 35px;
-    padding-bottom: 150px;
+    padding-bottom: 120px;
 }
 .btns button{
     width: 40%;
@@ -282,7 +282,7 @@ footer{
         margin-right:5% ;
     }
     .top .block-1 h1{
-        font-size: 3.4em;
+        font-size: 3.3rem;
     }
     #ex{
         display: none;
@@ -294,7 +294,7 @@ footer{
         display: inline;
     }
     .mid{
-        margin-top: 200px;
+        margin-top: 120px;
     }
     .exclusive{
         display: flex;
@@ -326,7 +326,7 @@ footer{
         flex-direction: row;
         align-items: center;
         background-size: 1000px;
-        height: 500px;
+        height: 420px;
         background-position: -320px -600px;
     }
     .text-2{
